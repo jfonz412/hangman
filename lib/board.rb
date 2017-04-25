@@ -3,9 +3,9 @@ class Board
   	@board_objects = board_objects
   end
 
-  def draw_board_objects(letter, index, is_correct)
+  def draw_board_objects(results)
   	@board_objects.each do |key,object|
-  	  object.draw_self(letter, index, is_correct)
+  	  object.draw_self(results)
   	end
   end
 end
