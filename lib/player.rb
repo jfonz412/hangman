@@ -8,6 +8,7 @@ class Player
   public
   def pick_a_letter
   	puts "Guess a letter"
+    puts "(Enter \"save\" to save and quit)"
   	loop do
       @chosen_letter = gets.chomp.downcase
       break if validate(@chosen_letter) == true

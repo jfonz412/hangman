@@ -1,0 +1,50 @@
+---
+:game_master: !ruby/object:GameMaster
+  secret_word: silverfish
+  results:
+    :letter: u
+    :indexes: []
+    :is_correct: false
+:player: !ruby/object:Player
+  already_picked_letters:
+  - a
+  - e
+  - i
+  - o
+  - u
+  - save
+  chosen_letter: save
+:hanging_man: !ruby/object:Gallows
+  turns: 3
+  man:
+  - "\n\t       _____\n\t       |    | \n\t            |\n\t            |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t       0    |\n\t            |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t       0    |\n\t       |    |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t      \\0    |\n\t       |    |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t      \\0/   |\n\t       |    |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t      \\0/   |\n\t       |    |\n\t      /
+    \    |\n\t            |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t      \\0/   |\n\t       |    |\n\t      /
+    \\   |\n\t            |\n\t      ========  \n\t    "
+:secret_word_space: !ruby/object:WordSpace
+  hidden_word:
+  - _
+  - i
+  - _
+  - _
+  - e
+  - _
+  - _
+  - i
+  - _
+  - _
+:letter_dump: !ruby/object:Dump
+  wrong_letters:
+  - a
+  - o
+  - u

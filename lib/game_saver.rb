@@ -7,7 +7,7 @@ class GameSaver
   	puts "Saving the game..."
     @game_save = YAML.dump(@game_objects)
 
-    f = File.open("save_game1.yaml", 'w')
+    f = File.open("save_game.yaml", 'w')
     f.write(@game_save)
     puts "Done!"
   end

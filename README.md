@@ -1,0 +1,1 @@
+My goal was for each object to take care of it's own business, and for each object to have just one responsibility. This helped isolate issues and bugs, and made most of the project a pleasure to code...until I got to the save/reload feature, where some of my design issues (mainly with the game-loop itself) were exposed.

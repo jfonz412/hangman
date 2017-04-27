@@ -7,7 +7,7 @@ class GameLoader
   
   private
   def check_for_file
-    if File.exist? './save_game1.yaml'
+    if File.exist? './save_game.yaml'
       puts "\nPrevious save found"
       puts "Do you want to load your last save?"
       puts "(Y/N)?"
@@ -29,8 +29,9 @@ class GameLoader
     end
   end
 
+  #ask game_master to tweak it's results hash (see gamemaster.rb for full explanation)
   def tweak_loaded_game
-    @loaded_game[:game_master].nilify_results #ask game_master to clear it's results hash
+    @loaded_game[:game_master].tweak_results 
   end
 
 end
