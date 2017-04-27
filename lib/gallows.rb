@@ -2,7 +2,7 @@ class Gallows
   attr_reader :turns
 
   def initialize
-  	@turns = -1 # to compensate for initial draw
+  	@turns = 0
     @man =  [
 	    %q{
 	       _____
@@ -78,7 +78,7 @@ class Gallows
 
   public
   def draw_self(results)
-  	if results[:is_correct] == false
+  	if results[:is_correct] == false && results[:letter] != nil
   	  @turns += 1
   	end
   	print @man[@turns]

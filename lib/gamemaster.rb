@@ -28,5 +28,13 @@ class GameMaster
   	  end
   	end
   end
-
+  
+  #probably will stay, may not need this...
+  def nilify_results
+    @results = {
+      letter: nil,
+      indexes: [],
+      is_correct: false
+    }
+  end
 end

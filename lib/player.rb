@@ -22,8 +22,9 @@ class Player
   	  puts "No numbers please" 
   	  return false
   	end
-
-    if chosen_letter.length != 1
+    if chosen_letter == "save" #returns true so that this can be passed to game_saver
+      true
+    elsif chosen_letter.length != 1
       puts "Please choose a SINGLE letter"
       false
     elsif @already_picked_letters.include? chosen_letter

@@ -1,0 +1,50 @@
+---
+:game_master: !ruby/object:GameMaster
+  secret_word: mendicancy
+  results:
+    :letter: f
+    :indexes: []
+    :is_correct: false
+:player: !ruby/object:Player
+  already_picked_letters:
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+  - save
+  chosen_letter: save
+:hanging_man: !ruby/object:Gallows
+  turns: 2
+  man:
+  - "\n\t       _____\n\t       |    | \n\t            |\n\t            |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t       0    |\n\t            |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t       0    |\n\t       |    |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t      \\0    |\n\t       |    |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t      \\0/   |\n\t       |    |\n\t            |\n\t
+    \           |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t      \\0/   |\n\t       |    |\n\t      /
+    \    |\n\t            |\n\t      ========  \n\t    "
+  - "\n\t       _____\n\t       |    | \n\t      \\0/   |\n\t       |    |\n\t      /
+    \\   |\n\t            |\n\t      ========  \n\t    "
+:secret_word_space: !ruby/object:WordSpace
+  hidden_word:
+  - _
+  - e
+  - _
+  - d
+  - _
+  - c
+  - a
+  - _
+  - c
+  - _
+:letter_dump: !ruby/object:Dump
+  wrong_letters:
+  - b
+  - f
